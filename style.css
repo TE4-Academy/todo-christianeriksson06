@@ -1,58 +1,69 @@
 /* Todo Basics CSS - har några problem som du behöver fixa! */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 10px;
-    /* Väldigt liten margin? */
-    background-color: white;
-    /* Kanske lite tråkigt? */
+  font-family: Arial, sans-serif;
+
+  margin: 20px;
+  background-color: #f5f5f5;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 10px;
-    /* För liten padding? */
-    /* Ingen bakgrund eller skugga? Ser platt ut */
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  /* För liten padding? */
+  /* Ingen bakgrund eller skugga? Ser platt ut */
+  background-color: #333030;
+  border-radius: 15px;
+  box-shadow: 10px 10px rgb(189, 183, 183);
 }
 
 h1 {
-    text-align: left;
-    /* Borde kanske vara centrerad? */
-    color: black;
-    /* Lite tråkig färg? */
-    margin-bottom: 30px;
+  text-align: center;
+
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
 }
 
 /* Input-sektion */
 .input-section {
-    margin-bottom: 20px;
-    /* Ingen layout-styling? Items staplas vertikalt istället för horisontellt */
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 #todo-input {
-    padding: 5px;
-    /* För liten padding? */
-    font-size: 12px;
-    /* För liten text? */
-    border: 3px solid red;
-    /* Ful röd ram? */
-    width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #0ab6ab;
+  width: 200px;
+  border-radius: 15px;
+  background-color: #333030;
+  color: white;
 }
 
 /* Knapp-styling - har stora problem! */
 .add-button {
-    padding: 5px;
-    /* För liten padding? */
-    font-size: 12px;
-    /* För liten text? */
-    border: 3px solid purple;
-    /* Ful lila ram? */
-    background-color: yellow;
-    /* Gul bakgrund? Ser konstigt ut! */
-    color: blue;
-    /* Blå text på gul bakgrund? */
-    cursor: pointer;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #0ab6ab;
+  background-color: #333030;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+.clear-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #0ab6ab;
+  background-color: #333030;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 15px;
+  margin-left: 10px;
 }
 
 /* TODO: Här behöver du lägga till CSS för olika knapp-typer */
@@ -60,43 +71,72 @@ h1 {
 
 /* Todo-lista */
 .todo-list {
-    border: 1px solid #ccc;
-    min-height: 200px;
-    padding: 10px;
-    margin: 20px 0;
-    /* Ingen bakgrundsfärg? */
+  border: 1px solid #ccc;
+  min-height: 200px;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 4px;
+  background-color: rgb(224, 224, 224);
 }
 
 /* TODO: Du behöver CSS för todo-items */
-/* .todo-item { } */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item:hover {
+  background-color: #f9f9f9;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  font-size: 16px;
+}
 /* .todo-item.completed { } */
-/* .todo-item button { } */
+.todo-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.todo-item button:hover {
+  background-color: #c82333;
+}
 
 /* Statistik */
 .stats {
-    background-color: #f0f0f0;
-    padding: 10px;
-    text-align: center;
-    /* Kanske behöver bättre styling? */
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  /* Kanske behöver bättre styling? */
 }
 
 /* Debug-område */
 .debug {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin-top: 20px;
-    border-left: 4px solid #007acc;
-    font-size: 12px;
-    /* Kanske för liten text? */
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-top: 20px;
+  border-left: 4px solid #007acc;
+  font-size: 12px;
+  /* Kanske för liten text? */
 }
 
 .debug h3 {
-    margin-top: 0;
-    color: #007acc;
+  margin-top: 0;
+  color: #007acc;
 }
 
 .debug span {
-    font-weight: bold;
-    color: #d63384;
-    font-family: monospace;
+  font-weight: bold;
+  color: #d63384;
+  font-family: monospace;
 }

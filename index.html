@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="sv">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo Basics</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h1>Min Todo-app</h1>
+      <h1>Min Todo-app</h1>
 
-        <!-- Input-området -->
-        <div class="input-section">
-            <input type="text" id="todo-input" placeholder="Vad ska du göra?">
-            <button id="add-btn" class="add-button">Lägg till</button>
-            <!-- TODO: Bara "Lägg till" knapp finns - var är "Rensa" och "Ta bort alla"? -->
-        </div>
+      <!-- Input-området -->
+      <div class="input-section">
+        <input type="text" id="todo-input" placeholder="Vad ska du göra?" />
+        <button id="add-btn" class="add-button">Lägg till</button>
+        <button id="clear-btn" class="clear-button">Rensa ALLA</button>
+        <!-- TODO: Bara "Lägg till" knapp finns - var är "Rensa" och "Ta bort alla"? -->
+      </div>
 
-        <!-- Todo-listan -->
-        <div id="todo-lista" class="todo-list">
-            <!-- Listan kommer att visas här... eller? -->
-        </div>
+      <!-- Todo-listan -->
+      <div id="todo-lista" class="todo-list">
+        <!-- Listan kommer att visas här... eller? -->
+      </div>
 
-        <!-- Statistik -->
-        <div class="stats">
-            <p>Totalt: <span id="total-count">0</span> todos</p>
-            <!-- TODO: Lägg till fler statistik som "Klara" och "Inte klara" -->
-        </div>
+      <!-- Statistik -->
+      <div class="stats">
+        <p>Totalt: <span id="total-count">0</span> todos</p>
+        <!-- TODO: Lägg till fler statistik som "Klara" och "Inte klara" -->
+      </div>
 
-        <!-- Debug-område -->
-        <div id="debug" class="debug">
-            <h3>Debug-info:</h3>
-            <p>Array-längd: <span id="debug-length">-</span></p>
-            <p>Senaste todo: <span id="debug-last">-</span></p>
-            <p>Array-innehåll: <span id="debug-array">-</span></p>
-        </div>
+      <!-- Debug-område -->
+      <div id="debug" class="debug">
+        <h3>Debug-info:</h3>
+        <p>Array-längd: <span id="debug-length">-</span></p>
+        <p>Senaste todo: <span id="debug-last">-</span></p>
+        <p>Array-innehåll: <span id="debug-array">-</span></p>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
